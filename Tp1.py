@@ -92,17 +92,3 @@ sns.scatterplot(x="Edad", y="Ingresos", data=df)
 plt.title("Relación entre Ingresos y Edad")
 plt.show()
 
-# ==============================
-# 8. Informe en PDF
-# ==============================
-# 👉 Este punto no se hace por código: 
-# Tenés que sacar capturas de pantalla de:
-#   - Exploración inicial
-#   - Resultados de limpieza (nulos, duplicados)
-#   - Análisis descriptivo
-#   - Gráficos
-# Luego armás un informe en Word o Google Docs:
-#   - Introducción: qué dataset es y qué problemas tenía
-#   - Desarrollo: capturas de cada paso
-#   - Conclusiones: cómo estaba el dataset original y cómo quedó limpio
-# Finalmente exportás el documento a PDF.
