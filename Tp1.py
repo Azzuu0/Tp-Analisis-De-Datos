@@ -24,7 +24,10 @@ print(df.head())
 # 3. Detectar y manejar valores nulos
 # ==============================
 # Reemplazar la palabra "desconocido" por NaN para unificar
-df = df.replace("desconocido", pd.NA)
+df ["edad_aux"]=df["Edad"].astype("string").str.strip()
+
+df["edad_aux"] = df["edad_aux"].str.strip().replace("desconocido", pd.NA)
+
 
 print("\nValores nulos antes de limpiar:")
 print(df.isnull().sum())
@@ -91,4 +94,3 @@ plt.figure(figsize=(6,4))
 sns.scatterplot(x="Edad", y="Ingresos", data=df)
 plt.title("Relación entre Ingresos y Edad")
 plt.show()
-
